@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+#navbar {
+  background-color: black;
+}
+
+
 .row {
   margin-right: 0px;
 }
@@ -34,8 +39,8 @@
   display: inline;
 }
 
-footer {
-  background-color: black;
+#bl {
+  background-color: #050505;
   color:#f2f2f2;
 
 }
@@ -67,52 +72,522 @@ footer {
   height: 2rem;
 }
 
-.banner::after {
-  content: '';
-  height: 100vh;
-  width: 100%;
-  background-image:  url(../images/about.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  position: relative;
-  opacity: 0.8;
+/*about css*/
+
+.banner {
+  position: relative
 }
 
-.box {
+.banner img {
+  width: 100%;
+  height: 100vh;
   
-  text-align: center;
-  width: 60%;
-  /*margin: auto;*/
-  padding: 50px;
+}
+
+.hcenter {
   position: absolute;
-  z-index: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
-
-.box h1 {
-  font-size:8em;
+  font-size: 8em;
   font-family: 'Kreon', serif;
 }
 
 
+#vision {
+  font-size: .9em;
+  width: 80%;
+  margin: auto;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.head {
+  position: absolute;
+  z-index: -5;
+  font-size: 250px;
+  color: lightgrey;
+  opacity: 0.3;
+  bottom: 8%;
+  left:23%;
+  font-family: 'Patua One', cursive;
+}
+
+.head2 {
+   position: absolute;
+  z-index: -5;
+  font-size: 250px;
+  color: lightgrey;
+  opacity: 0.3;
+  bottom: 8%;
+  left:30%;
+  font-family: 'Patua One', cursive;
+}
+
+
+#how {
+  font-size: .9em;
+  width: 80%;
+  margin: auto;
+  margin-top: 12%;  
+}
+
+#head3 {
+  position: absolute;
+  z-index: -5;
+  font-size: 200px;
+  color: lightgrey;
+  opacity: 0.2;
+  top:-60%;
+  right:-20%;
+  font-family: 'Patua One', cursive;
+}
+
+#team {
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#head4 {
+  position: absolute;
+  z-index: -5;
+  font-size: 150px;
+  color: lightgrey;
+  opacity: 0.2;
+  top:-80%;
+  left:-20%;
+  font-family: 'Patua One', cursive;
+}
+
+#tpic {
+  width: 80%;
+}
+
+.card {
+  max-width: 15rem;
+
+}
+
+/*phone CSS*/
+
+
+#iphonexs {
+  position: relative
+  /*background-position: 50px 0px;*/
+}
+
+#iphonexs img {
+  width: 100%;
+  height: 100vh;
+  
+  
+}
+
+#left {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  width: 20%;
+  
+  color: white;
+  font-size: 5em;
+  font-family: 'Kreon', serif;
+}
+
+#right {
+  position: absolute;
+  top: 20%;
+  right: 2%;
+  width: 20%;
+  
+  color: white;
+  font-size: 5em;
+  font-family: 'Kreon', serif;
+}
+
+#diphone {
+  background-color: #fd9200;
+  color: black;
+  line-height: 1.5;
+  padding: 70px;
+}
+
+#diphone h2, #diphone h4{
+  width: 30%;
+  margin: auto;
+}
+
+#diphone button {
+  position: absolute;
+  left: 46%;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+#iphone2 {
+  width: 90%;
+  margin: auto;
+}
+
+#img3 {
+  width: 100%;
+  height: 70vh;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+  overflow: hidden;
+
+}
+
+.layer .content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+}
+
+.layer .content-body{
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.layer img{
+  position: absolute;
+  width: 35%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+  font-size: 2em;
+}
+
+.bottom {
+  background:black;
+  z-index: 1;
+}
+
+.bottom .content-body{
+  right: 5%;
+}
+
+.bottom h1{
+  color:#ff9e9e;
+
+}
+
+.top{
+  background: #eee;
+  color: #222;
+  z-index: 2;
+  width: 50vw;
+}
+
+.top .content-body {
+  left: 5%;
+  color: #222;
+}
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: orange;
+  width: 5px;
+  top: 0;
+  left: 50.2%;
+  z-index: 3;
+}
+
+.skewed .handle {
+  top:50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin: top;
+}
+
+.skewed .top {
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap {
+  transform: skew(30deg);
+  margin-left: 1000px;
+}
+
+
+#cont3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cont4 {
+  position: relative;
+  width: 360px;
+  height: 580px;
+  margin-top: 80px;
+  background: rgba(201,124,93,.1);
+  transform: rotate(-30deg) skew(25deg);
+  transition: 0.5s;
+} 
+
+#cont4 img {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+
+#cont4:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+#cont4:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: .8;
+}
+
+#cont4:hover img:nth-child(2) {
+  transform: translate(80px,-80px);
+  opacity: .6;
+}
+
+#cont4:hover img:nth-child(1) {
+  transform: translate(40px,-40px);
+  opacity: .4;
+}
+
+#iphone3 {
+  width: 90%;
+  margin: auto;
+}
+
+#img4 {
+  width: 100%;
+  height: 70vh;
+}
+
+/*tablet html css*/
+
+#top {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-size: 60px;
+  color: white;
+}
+
+#tabs button {
+  position: absolute;
+  left: 45%;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+#tabs {
+  background-color: #fd9200;
+  color: black;
+  line-height: 1.5;
+  padding: 40px 70px 80px 70px;
+}
+
+#tabs h2 {
+  width: 30%;
+  margin: auto;
+}
+
+#tabs h4 {
+  width: 30%;
+  margin: auto;
+}
+
+#img5 {
+  
+  height: 45vh;
+}
+
+#img6 {
+
+  height: 45vh;
+}
+
+#tabs4 {
+  position: relative;
+}
+
+#tabs4 img {
+  width: 98.7vw;
+  height: 100vh;
+}
+
+
+/*Laptop HTML*/
+#top1 {
+  font-family: 'Special Elite', cursive;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 80px;
+  color: white;
+}
+
+
+#dlaptop {
+  background-color: #81E979;
+  color: black;
+  line-height: 1.5;
+   padding: 40px 70px 80px 70px;
+}
+
+#dlaptop h2, #dlaptop h4{
+  width: 30%;
+  margin: auto;
+}
+
+#dlaptop button {
+  position: absolute;
+  left: 45%;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.handle2 {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: green;
+  width: 5px;
+  top: 0;
+  left: 50.2%;
+  z-index: 3;
+}
+
+.skewed .handle2 {
+  top:50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin: top;
+}
+
+.bottom2 {
+  background:black;
+  z-index: 1;
+}
+
+.bottom2 .content-body{
+  right: 5%;
+}
+
+.bottom2 h1{
+  color:grey;
+
+}
+
+#cont5 {
+  position: relative;
+  width: 360px;
+  height: 580px;
+  margin-top: 80px;
+  background: rgba(129,233,121,.1);
+  transform: rotate(-30deg) skew(25deg);
+  transition: 0.5s;
+} 
+
+#cont5 img {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+
+#cont5:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+#cont5:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: .8;
+}
+
+#cont5:hover img:nth-child(2) {
+  transform: translate(80px,-80px);
+  opacity: .6;
+}
+
+#cont5:hover img:nth-child(1) {
+  transform: translate(40px,-40px);
+  opacity: .4;
+}
+
+#ltop {
+  position: relative;
+}
+
+#ltop img {
+  width: 98.7vw;
+  height: 100vh;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-/*tablet*/
+/*table media queries*/
 
 @media only screen and (min-width: 401px) and (max-width: 768px) {
   body{
@@ -122,15 +597,174 @@ footer {
   .img-fluid {
     height: 350px;
   }
+
+  .head {
+    font-size: 120px;
+    top:5%;
+    right: 21%;
+  }
+
+  .head2 {
+    font-size: 120px;
+    top:5%;
+    right: 27%;
+  }
+
+  #vis {
+    font-size: 3em;
+  }
+
+  #head3 {
+    font-size: 8em;
+    top: -20%;
+    right: 0%;
+  }
+
+  #head4 {
+    font-size: 6em;
+    top: 40%;
+    left: 5%;
+    transform: translateY(-100%);
+  }
+
+
+  /*phone css*/
+
+  #left {
+  top: 40%;
+  left: 1%;
+  width: 20%;
+  font-size: 2.5em;
+  }
+
+  #right {
+  top: 40%;
+  right: 1%;
+  width: 20%;
+  font-size: 2.5em;
+  
+  }
+
+  #iphonexs img{
+    height: 80vh;
+  }
+
+   #wrapper {
+    font-size: 75%;
+  }
+
+  #diphone h2{
+    /*font-size: 75%;*/
+    width: 80%;
+  }
+
+  #diphone h4{
+    width: 80%;
+  }
+
+  #img3 {
+    height: 60vh;
+  }
+
+  #iphone2 {
+    width: 95%;
+  }
+
+  #iphone2 p {
+    margin-top: 0;
+  }
+
+  #diphone button {
+  
+  left: 42%;
+  
+  }
+
+  #iphone3 {
+    width: 90%;
+    margin: auto;
+  }
+
+  #img4 {
+    height: 60vh;
+  }
+
+  /*tablet html*/
+
+  #tabs4 img {
+  width: 100vw;
+  }
+
+  #top {
+  /*position: absolute;
+  top: 10%;
+  left: 20%;*/
+  font-size: 250%;
+ /* color: white;*/
 }
 
-@media only screen and (max-width: 414px){
-  body {
-  width: 100%;
-    }
+#tabs button {
+ /* position: absolute;*/
+  left: 41.5%;
+  /*padding-left: 20px;
+  padding-right: 20px;*/
+  
+}
 
-  h1,
-  p {
+#tabs h2 {
+  width: 50%;
+  margin: auto;
+}
+
+#tabs h4 {
+  width: 50%;
+  margin: auto;
+}
+
+#cont4 {
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+}
+
+/*laptop html*/
+
+
+#cont5 {
+  transform: rotate(-30deg) skew(25deg) scale(0.7);
+}
+
+#cont3 {
+    height: 60vh;
+}
+
+#top1 {
+  font-size: 300%;
+}
+
+#dlaptop button {
+  left: 41.5%;
+}
+
+#dlaptop h2 {
+  width: 50%;
+  margin: auto;
+}
+
+#dlaptop h4 {
+  width: 50%;
+  margin: auto;
+}
+
+
+#ltop img { 
+  width: 100vw;
+  height: 83vh;
+}
+
+/*phone media queries*/
+
+
+@media only screen and (max-width: 600px){
+  #center h1 p {
     text-align: center;
   }
 
@@ -140,14 +774,205 @@ footer {
     text-align: left;
   }
 
-  .custom-control
-   {
+  .custom-control {
     text-align: center;
   }
 
   button {
     margin-left:128px;
   }
+
+  /*about css*/
+
+  .head {
+    font-size: 120px;
+    top:5%;
+  
+  }
+
+  .head2 {
+    font-size: 120px;
+    
+  }
+
+  #head3 {
+    font-size: 5em;
+    position: absolute;
+    right: 0%;
+    top: -100%;
+    transform: translateY(-20%);
+   
+  }
+
+  #head4 {
+    font-size: 5em;
+    top:-100%;
+    transform: translateY(-60%);
+    left: 4%;
+  }
+
+  
+
+  #how {
+    width: 100%;
+    text-align: left;
+    margin-top: 20%;
+  }
+
+  #how h3 {
+    margin-bottom: 5%;
+  }
+  
+  #team {
+    width: 100%;
+    margin-top: 30%;
+  }
+
+  .card {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 25rem;
+  }
+
+  /*phone css*/
+
+  #iphonexs img{
+    height: 50vh;
+  }
+
+  #left {
+  top: 40%;
+  left: 1%;
+  width: 20%;
+  font-size: 1.5em;
+  }
+
+  #right {
+  top: 40%;
+  right: 1%;
+  width: 20%;
+  font-size: 1.5em;
+  
+  }
+
+  #wrapper {
+    font-size: 50%;
+  }
+
+  #diphone h2 {
+    font-size: 90%;
+    width: 80%;
+  }
+
+  #diphone h4 {
+    font-size: 90%;
+    width: 80%;
+  }
+
+  #diphone button {
+  
+  left: 8%;
+  font-size: 75%;
+  
+  }
+
+  #iphone2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .col-md-5 {
+    padding: 0;
+  }
+
+  #img3 {
+    margin-bottom: 15px;
+  }
+
+
+  #iphone3 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .offset-md-1 {
+    padding-left: 0;
+  }
+
+  /*tablet html*/
+
+  #cont4 {
+  transform: rotate(-30deg) skew(25deg) scale(0.4);
+  /*margin-top: 100px;*/
+
+  }
+
+  #cont3 {
+    height: 50vh;
+  }
+
+  #tabs h2 {
+    font-size: 90%;
+    width: 80%;
+  }
+
+  #tabs h4 {
+    font-size: 90%;
+    width: 80%;
+  }
+
+  #tabs button {
+  
+  left: 8%;
+  font-size: 75%;
+  
+  }
+
+  #top {
+    font-size: 150%;
+    left: 16%;
+  }
+
+  #img5 {
+    margin-bottom: 20px;
+  }
+
+  /*laptop html*/
+
+  #cont5 {
+    transform: rotate(-30deg) skew(25deg) scale(0.4);
+  }
+
+  #cont3 {
+    height: 50vh;
+  }
+
+  #top1 {
+    font-size: 230%;
+    left: 16%;
+  }
+
+  #dlaptop button {
+    left: 8%;
+    font-size: 75%;
+  }
+
+  #dlaptop h2 {
+    font-size: 100%;
+    width: 80%;
+  }
+
+  #dlaptop h4 {
+    font-size: 90%;
+    width: 80%;
+  }
+
+
+  #ltop img { 
+    width: 100vw;
+    height: 83vh;
+  }
+
 
 }
 
